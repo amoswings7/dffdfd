@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .intro-section{
+            min-height: 100vh;
+            height: fit-content;
+            color: white;
+            padding: 100px 20px 30px 20px;
+            /* background-color: violet; */
+            background:linear-gradient(0deg,#034,transparent), linear-gradient(90deg, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('plumbing-wallpaper.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+            /* animation-name: backgroundAnimation;
+            animation-duration: 40s;
+            animation-iteration-count: infinite; */
+            /* background-blend-mode: luminosity; */
+            /* filter: grayscale(100%); */
+        }
+        /* @keyframes backgroundAnimation{
+            0%{
+                background-size: 4224px 2816px;  
+            }
+            50%{
+                background-size: 3840px 2560px;  
+            }
+            100%{
+                background-size: 4224px 2816px;  
+            }
+        } */
+        .first-box{
+            min-width: 300px;
+            max-width: 500px;
+            height: fit-content;
+            border: 2px solid #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .first-box>header{
+            padding-bottom: 30px;
+        }
+        .first-box>header>h1{
+            font-size: 64px;
+            letter-spacing: 10px;
+            color: #219ebc;
+        }
+        .first-box>header>p{
+            font-size: 18px;
+            color: hsl(213, 100%, 70%);
+        }
+        .first-box>p{
+            margin-top: 80px;
+            position: relative;
+            font-size: 18px;
+        }
+        .first-box>p::before{
+            position: absolute;
+            content: '';
+            top: -20px;
+            left: 0;
+            width: 100px;
+            height: 3px;
+            background-color: #fb8500;
+        }
+        .second-box{
+            min-width: 300px;
+            max-width: 500px;
+            max-height: 400px;
+            height: fit-content;
+            /* display: none; */
+            /* border: 2px solid blue; */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding: 50px; */
+        }
+        .second-box>img{
+            width:80%;
+            border-radius: 50%;
+            /* height: 300px; */
+        }
+
+
+        @media screen and (max-width:540px) {
+            .second-box{
+                display: none;
+            }
+            @media screen and (max-width:420px) {
+                .first-box>header>h1{
+                    font-size: 54px;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="intro-section">
+        <div class="first-box">
+            <header>
+                <h1>Building & <br>Plumbing </h1>
+                <p>By TakeTime Nyirenda and his team</p>
+            </header>
+
+            <p>
+                No job is too big or too small for Taketime and his team. <br><br>We do building, additions, alterations, tiling, painting, paving, skimming, ceilings and much, much more.
+            </p>
+
+        </div>
+        <div class="second-box">
+            <img src="showOff2.png" alt="logo">
+        </div>
+    </div>
+    
+</body>
+</html>
